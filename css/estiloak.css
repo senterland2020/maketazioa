@@ -30,7 +30,7 @@ body {
 .nagusia header {
     grid-area: header;   /* Aplikatzeko lekua edo area*/
     background: #b0e0f0; /* Aukeratutako kolorea*/
-    font-size: 4rem; /*Tamaina*/
+    font-size: 10rem; /*Tamaina*/
     text-align: center; /*Testuaren kokapena*/
 }
 .nagusia nav {
