@@ -1,0 +1,48 @@
+.taldekideak {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.taldekideak__title {
+	font-family: 'Pacifico', cursive;
+	color: #DE423A;
+	font-weight: bold;
+	/*------------------------Letren lodiera -------------*/
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	/*------------------------marginaren luzeera-------------*/
+}
+.taldekideak__img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	/*------------------------irudia container-ean leku osoa okupatzeko-------------*/
+	border-radius: 50%;
+	/*------------------------irudiak borobilak izateko-------------*/
+	margin: auto;
+	margin-bottom: 20px;
+}
+.taldekideak__txt {
+	padding: 10px;
+}
+
+@media screen and (min-width:480px) {
+	/*------------------------pantaila tamaina desberdinetan zelan ikusiko den konfiguratzeko-------------*/
+	.taldekideak__img {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.taldekideak__img {
+		width: 220px;
+		height: 220px;
+	}
+}
+.taldekideak__title {
+	font-size: 2.1em;
+
+}
+
+

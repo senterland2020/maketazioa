@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<!-- bilatzaileari adierazteko ze html versioa erabili den-->
+<html>
+
+<head> 
+<!-- meta etiketak dira-->
+
+	<meta charset="UTS-8"> <!--
+Karaktereak kodetzeko sistema bat da, hainbat hizkuntzatan idatzitako testuen truke, prozesamendu eta bistaratze unibertsalari eusteko diseinatua.
+-->
+	
+	<meta name="viewport" content="widht=device-widht, initial-scale=3">
+	<title>ESKALADA</title>
+	<link rel="stylesheet" href="css/css.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<!--iruditzoak sartzeko-->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+	<!--letra motak-->
+</head>
+
+<body>
+	<header class="header" id="inicio">
+		<img src="irudiak/menua.svg" alt="" class="hamburguer">
+		<nav class="menua-nabigatzeko">
+			<a href="orriak/zerda.html">ZER DA?</a>
+			<a href="orriak/materiala.html">MATERIALAK</a>
+			<a href="orriak/irudiak.html">IRUDIAK</a>
+			
+			<!--menua sortzeko, irudia menuarena boxiconetik aterata-->
+		</nav>
+		<div class="contenedor head">
+			<h1 class="tituloa">ESKALADA </h1>
+			<p class="copy">Eskaladari buruzko informazio guztia aurkitu dezakezu.</p>
+		</div>
+	</header>
+	<main>
+		<section class="services contenedor" id="servicio">
+			<h2 class="subtitulo"> 
+			<!--class textuaren motak dira-->
+			<div class="contenedor-servicio">
+				<img src="irudiak/eskalada1.jpg" alta="">
+				<div class="checklist-servicio">
+					<div class="service">
+						<h3 class="n-service"><span class="number">1</span>KIROL OSO POLITA DA </h3>
+						<p>Leku zoragarri asko ikusten dira.</p>
+					</div>
+					<div class="service">
+						<h3 class="n-service"><span class="number">2</span>GORPUTZ OSOA AKTIBATZEN DEU</h3>
+						<p> Garuna ere erabili behar da kirol honetan.</p>
+					</div>
+					<div class="service">
+						<h3 class="n-service"><span class="number">3</span>MOTA ASKO DAUDE</h3>
+						<p>Uretan ere praktikatu ahal da.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="galery" id="galeria">
+			<div class="contenedor">
+			<h2 class="subtitulo">GALERIA</h2>
+				<div class="contenedor-galeria">
+				<img src="irudiak/pou.jpg" alt="" class="img-galeria">
+				<!--irudiak askeak dira eta ez dute jaberik-->
+				<img src="irudiak/frantzia.jpg" alt="" class="img-galeria">
+				<img src="irudiak/colorado.jpg" alt="" class="img-galeria">
+				
+				</div>
+			</div>
+		</section>
+		<!--hau javascriptekin lotuko dut -->
+		<section class="imagen-light">
+			<img src="irudiak/x.svg" alt="" class="close">
+			<img src="" alt="" class="agregar-imagen">
+		</section>
+		
+		</section>
+	
+	</main>
+	
+		
+		
+		<!---hauek dira sare sozialetako logoak boxiconetik hartuta-->
+	<footer id="contacto">
+		<div class="contenedor footer-content">
+			<div class="contact-us">
+			<h2 class="brand">ESKALA.EUS</h2>
+			<p> Zerbait behar baduzu, jar zaitez gurekin harremanetan.</p>
+			</div>
+			<div class="social-media">
+			<a href="https://www.facebook.com/IESUrritxeBHI" class="social-media-icon">
+			<i class='bx bxl-facebook-square'></i>
+			
+			</a>
+			<a href="https://www.instagram.com/urritxe_bhi" class="social-media-icon">
+			<i class='bx bxl-instagram'></i>
+			</a>
+			<!--./ da adierazteko ez doala inora-->
+			
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/menua.js"></script>
+	<script src="js/lightbox.js"></script>
+	<!--javascriptekin lozeko-->
+</body>
+</html>

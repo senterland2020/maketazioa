@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+	background: #FFFFFF;
+}
+
+.nagusia {
+    display: grid; /*Sareta; Kuadrikula; grid*/
+    grid-template-rows: 4rem 1rem auto 45px; /*Hemen hiru ilara jarri ditugu bakoitza bere altueraren balio desberdinekin*/
+    grid-template-columns: 1rem 1fr 3fr 1fr; /*Hemen hiru ilara jarri ditugu bakoitza bere balio desberdinekin, hirugarrena
+	besteak baino hiru aldeiz zabalagoa izango da*/
+	/*
+	fr unitateak beharrezko diren "zatikiak" zehazteko aukera ematen du, zabalera erabiltzen ditugun 
+	koefizienteekiko proportzioan banatzen dutenak. Adibidez, 1fr 2fr 5fr 2fr 1fr 5 zutabeko egitura bat sortuko luke, 
+	zabalera erabilgarria 11 zatitan zatikatuz (fr guztien batura) eta bakoitzaren balioaren arabera banatuz.
+	*/
+    grid-template-areas: /*Nola daude gure areak banatuta, 4*3 denez*/
+        "header header header header"
+		".      .      .      .     " /* Margina bat da.*/
+        ".      nav    main   .     "
+        "footer footer footer footer";
+		
+	/*
+	Propietate grid-template-areasek saretak, kuadrikulak edo grid-a definitzen dituen eremuei izena emateko balio du (gune huts bat adierazteko
+	puntu bat erabiltzen dugu), eta, ondoren, elementuei CSS grid-area propietatearen bidez aplika dakizkieke, adibidean 
+	ikusten dugun bezala.
+	*/
+}
+
+.nagusia header {
+    grid-area: header;   /* Aplikatzeko lekua edo area*/
+    background: #FFD700; /* Aukeratutako kolorea*/
+    font-size: 3rem; /*Tamaina*/
+    text-align: center; /*Testuaren kokapena*/
+	font-family: "Courier New"
+}
+.fas fa-chevron-down{
+	display: block;
+	color: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	width: 40px;
+	height: 40px;
+	line-height: 45px;
+	text-align: left;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+.menu {
+position: absolute;
+top: 60px;
+left: 0;
+width: 100%;
+background: rgba(0,0,0,.85);
+padding: 0;
+margin: 0;
+list-style: none;
+text-align: center;
+height: 0;
+overflow: hidden;
+transition: height .3s linear;
+}
+.menu__link{
+	padding: 15px;
+}
+.mostar{
+	height: 196px;
+}
+.nagusia nav {
+    grid-area: nav; /* Aplikatzeko lekua edo area*/
+	z-index: 2000;
+	padding: 10px;
+}
+.nagusia main {
+    grid-area: main; /* Aplikatzeko lekua edo area*/
+
+}
+.nagusia footer {
+    grid-area: footer; /* Aplikatzeko lekua edo area*/
+	font-family: monospace; /* Aukeratutako letra estiloa*/
+    background: #DAA520; /* Aukeratutako kolorea*/
+}
+
+
+

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap');
+/* @import 'mediaqueries.css'; */
+
+/* KOLOREAK
+    ROSA:#e91e63
+    URDINA: #3296f3
+    FONDOA: #161623
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------------PRODUKTUA--------------------------------- */
+.produktua
+{
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.markarenizena
+{
+    color: #fff;
+    font-size: 6em;
+    font-weight:500;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin-top: 200px;
+}
+
+.produktuahero
+{
+    background-color: #0e0e1e;
+}
+/* -------------------------PRODUKTUA AMAIERA------------------------- */
+/* -------------------------GURI BURUZ-------------------------------- */
+.guriburuzhero
+{
+
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.info
+{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* #particles-js
+{
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    background-color: #e91e63;
+} */
+
+/* -------------------------GURIBURUZ AMAIERA------------------------- */
+
+/* -------------------------ORRI NAGUSIA------------------------------ */
+.hero
+{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/header.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.brand
+{
+    float: left;
+    width: 30px;
+    left: auto;
+    top: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #161623;
+
+}
+/* -------------------------ORRI NAGUSIA AMAIERA---------------------- */
+/* ------------------------MENUAREN HASIERA CSS------------------------ */
+
+.menu
+{
+    float: right;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    z-index: 100;
+}
+
+.navigation
+{
+    float: right;
+    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+    background: #1e1e31;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+
+
+}
+
+.navigation.active
+{
+    float: right;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+    transition-delay: 0s;
+
+}
+
+.navigation span
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(calc(10px * var(--x)),calc(10px * var(--y))); /* hasierako posizioa adierazten du */
+    transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s; /* klik egitean aldatzen dituen parametroak zenbat iraunten duten */
+    transition-delay: calc(0.2s * var(--i));  /* adierazten du zenbat irauten duen zirkulu bakoitza beztearekiko mugitzen asten */
+
+}
+
+.navigation.active span
+{
+    width: 50px;
+    height: 50px;
+    background: #3d4253;
+    transform: translate(calc(40px * var(--x)),calc(40px * var(--y)));  /* klik egitean aldatzen den tamaina "active" dagoenean, hau da, egoera handian dagoenean.  */
+}
+
+.navigation span ion-icon
+{
+    transition: 0.5s;
+    font-size: 0em;
+}
+
+.navigation.active span ion-icon   
+{
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.navigation.active span:hover ion-icon 
+{
+    color: #e91e63;
+    filter: drop-shadow(0 0 2px #e91e63) drop-shadow(0 0 5px #e91e63) drop-shadow(0 0 2px #e91e63)
+}
+
+/* ------------------------MENUAREN AMAIERA CSS------------------------ */

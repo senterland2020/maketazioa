@@ -1,0 +1,71 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+	
+}
+img{
+	width:150px;
+	height:150px;
+	border-radius:50%;   /* honek irudiaren bordeak kurbatzen ditu eta 50% izatean irudia zirkulu moduan ikusten da bordeak erditik erdira doazelako*/
+}
+nav li:hover{
+	background-color:white;
+}
+.nagusia {
+	background-color: #1f4bff;
+    display: grid; /*Sareta; Kuadrikula; grid*/
+    grid-template-rows: 4rem auto 200px; /*Hemen hiru ilara jarri ditugu bakoitza bere altueraren balio desberdinekin*/
+    grid-template-columns: 1fr 1fr 3fr 1fr; /*Hemen hiru ilara jarri ditugu bakoitza bere balio desberdinekin, hirugarrena
+	besteak baino hiru aldeiz zabalagoa izango da*/
+	/*
+	fr unitateak beharrezko diren "zatikiak" zehazteko aukera ematen du, zabalera erabiltzen ditugun 
+	koefizienteekiko proportzioan banatzen dutenak. Adibidez, 1fr 2fr 5fr 2fr 1fr 5 zutabeko egitura bat sortuko luke, 
+	zabalera erabilgarria 11 zatitan zatikatuz (fr guztien batura) eta bakoitzaren balioaren arabera banatuz.
+	*/
+    grid-template-areas: /*Nola daude gure areak banatuta, 4*3 denez*/
+        "header header header header"
+        ".      nav    main   .     "
+        "footer footer footer footer";
+		
+	/*
+	Propietate grid-template-areasek saretak, kuadrikulak edo grid-a definitzen dituen eremuei izena emateko balio du (gune huts bat adierazteko
+	puntu bat erabiltzen dugu), eta, ondoren, elementuei CSS grid-area propietatearen bidez aplika dakizkieke, adibidean 
+	ikusten dugun bezala.
+	*/
+}
+
+.nagusia header {
+    grid-area: header;   /* Aplikatzeko lekua edo area*/
+    background-color:black; /* Aukeratutako kolorea*/
+    font-size: 3rem; /*Tamaina*/
+    text-align: center; /*Testuaren kokapena*/
+	color:white;
+}
+.nagusia nav {
+    grid-area: nav; /* Aplikatzeko lekua edo area*/
+	width:100px;
+	color:white;
+}
+.nagusia .main {
+    grid-area: main; /* Aplikatzeko lekua edo area*/
+	margin-bottom:80px;
+	margin-left:50px;
+	color:white;
+}
+.nagusia footer {
+    grid-area: footer; /* Aplikatzeko lekua edo area*/
+    background: black;
+	color:white;
+}
+table {
+	background:black;
+	color:white;
+}
+h3 {
+	text-align:center;
+	color:white;
+	background:#1f4bff;
+	margin-bottom:-5px;
+}

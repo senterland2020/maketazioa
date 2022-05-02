@@ -1,0 +1,36 @@
+
+ <!-- Hemen interneten laguntzarekin egin dut sartzeko pasahitza eskatzea, baldinzak erabiliz txarto sarten baduzu berriro beste auker abat izateko.  -->
+
+
+<html 
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/usuario.css">
+<title>Sarrera</title>
+<h1 align="center">WEB ESKALADA</h1>
+
+
+</head>
+
+<body>
+<nav id="body" style="background-image:url(irudiak/fondousuario.jpg)">
+<SCRIPT  language=JavaScript> 
+function go(){
+
+if (document.form.password.value=='PASAHITZA' && document.form.login.value=='NAROA'){ 
+        document.form.submit(); 
+    } 
+    else{ 
+         alert("Mesedez sartu erabiltzaile eta pasahitz egokiak."); 
+    } 
+} 
+</SCRIPT> 
+<FORM name=form action="Orrinagusia.html">
+
+<P>Erabiltzailea:    <INPUT type=text name=login> 
+<P>Pasahitza: <INPUT type=password name=password> 
+<INPUT onclick=go() type=button value=Acceder>
+
+</FORM> 
+</body>
+</html>

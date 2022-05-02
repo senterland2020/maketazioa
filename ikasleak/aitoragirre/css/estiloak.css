@@ -1,0 +1,49 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.nagusia {
+    display: grid; /*Sareta; Kuadrikula; grid*/
+    grid-template-rows: 4rem auto 200px; /*Hemen hiru ilara jarri ditugu bakoitza bere altueraren balio desberdinekin*/
+    grid-template-columns: 1fr 1fr 3fr 1fr; /*Hemen hiru ilara jarri ditugu bakoitza bere balio desberdinekin, hirugarrena
+	besteak baino hiru aldeiz zabalagoa izango da*/
+	/*
+	fr unitateak beharrezko diren "zatikiak" zehazteko aukera ematen du, zabalera erabiltzen ditugun 
+	koefizienteekiko proportzioan banatzen dutenak. Adibidez, 1fr 2fr 5fr 2fr 1fr 5 zutabeko egitura bat sortuko luke, 
+	zabalera erabilgarria 11 zatitan zatikatuz (fr guztien batura) eta bakoitzaren balioaren arabera banatuz.
+	*/
+    grid-template-areas: /*Nola daude gure areak banatuta, 4*3 denez*/
+        "header header header header"
+        ".      nav    main   .     "
+        "footer footer footer footer";
+		
+	/*
+	Propietate grid-template-areasek saretak, kuadrikulak edo grid-a definitzen dituen eremuei izena emateko balio du (gune huts bat adierazteko
+	puntu bat erabiltzen dugu), eta, ondoren, elementuei CSS grid-area propietatearen bidez aplika dakizkieke, adibidean 
+	ikusten dugun bezala.
+	*/
+}
+
+.nagusia header {
+    grid-area: header;   /* Aplikatzeko lekua edo area*/
+    background: #7DABD1; /* Aukeratutako kolorea*/
+    font-size: 3rem; /*Tamaina*/
+    text-align: center; /*Testuaren kokapena*/
+}
+.nagusia nav {
+    grid-area: nav; /* Aplikatzeko lekua edo area*/
+}
+.nagusia .main {
+    grid-area: main; /* Aplikatzeko lekua edo area*/
+}
+.nagusia footer {
+    grid-area: footer; /* Aplikatzeko lekua edo area*/
+    background: #7DABD1;
+}
+
+
+}
+

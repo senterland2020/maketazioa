@@ -1,0 +1,88 @@
+body {
+	background:red;
+	color:#fff;
+	font-size:14px;
+}
+
+#container{
+	width:60%;
+	background:#2AB4BE;
+	margin:20 px auto;
+	overflow:auto;
+	padding. 25px;
+}
+header {
+	text-align:center;
+	border-bottom:#fff dashed 1px
+	backf
+	
+}
+
+header h1{
+	margin:0;
+	padding:0;
+	color: yellow;
+}
+
+header p{
+	margin-top:5px;
+	padding:0;
+	color: #000000;
+}
+
+h3 {
+	color:#fff;
+}
+
+section {
+	min-height:410px;
+}
+
+input [type='submit']{
+	padding:10px 15px;
+	color: #f06226;
+	border:0;
+	background:#fff;
+	cursor:pointer;
+}
+
+#emaitza h3{
+	background:#C6DB48;
+	padding:10px;
+	margin:10px 0;
+	
+}
+
+#emaitza span{
+	color:#000;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+<html>
+	<body>
+	<head>
+<link rel="stylesheet" type="text/css" href="../css/Estiloak_inkesta.css"
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">North Shore Surf Camp</h1>
+    <p id="description" class="description text-center">
+     Jakiteko zertan hobetu erantzun galdera hauei. Eskerrik asko.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="Izena">Izena</label>
+      <input
+        type="text"
+        name="Izena"
+        id="Izena"
+        class="form-control"
+        placeholder="Sartu zure izena"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="Posta elektrikoa">Posta elektrikoa</label>
+      <input
+        type="Posta elektrikoa"
+        name="Posta elektrikoa"
+        id="Posta elektrikoa"
+        class="form-control"
+        placeholder="Sartu zure posta elektrikoa"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="Zenbakia"
+        >Adina<span class="clue">(aukerakoa)</span></label
+      >
+      <input
+        type="Zenbakia"
+        name="Adina"
+        id="Zenbakia"
+        min="14"
+        max="18"
+        class="form-control"
+        placeholder="Adina"
+      />
+    </div>
+    <div class="form-group">
+      <p>Zein da gehien gustatu zaizun jarduera?</p>
+      <select id="zena" name="role" class="Form-control" required>
+        <option disabled selected value>Aukeratu erantzuna</option>
+        <option value="yinkana">Yinkana</option>
+        <option value="Mendiko ruta">Mendiko ruta</option>
+        <option value="Surfa">Surfa</option>
+        <option value="Azken eguneko Tu Si Que Vales">Azken eguneko "Tu Si Que Vales"</option>
+        <option value="other">Beste bat</option>
+		<textarea
+        id="Zein izan da jokua?"
+        class="Jokua"
+        name="Zein izan da jokua?"
+        placeholder="Jokuaren izena edo azaldu zertaz doan jokua"
+      ></textarea>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Nolakoak izan dira egindako ibilbideak?</p>
+      <label>
+        <input
+          name="Balorazioa"
+          value="Oso onak"
+          type="radio"
+          class="input-radio"
+          checked
+        />Oso onak</label
+      >
+      <label>
+        <input
+          name="Balorazioa"
+          value="Onak"
+          type="radio"
+          class="input-radio"
+        />Onak</label
+      >
+
+      <label
+        ><input
+          name="Balorazioa"
+          value="Txarrak"
+          type="radio"
+          class="input-radio"
+        />Txarrak</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Aterpetxearen balorazioa?
+      </p>
+      <select id="Balorazioa" name="Balorazioa" class="form-control" required>
+        <option disabled selected value>Aukeratu nota</option>
+        <option value="Oso txarra">1</option>
+        <option value="Txarra">2</option>
+        <option value="Ona">3</option>
+        <option value="Oso ona">4</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Zer gustatuko litzaizuke hobetzea?
+        <span class="clue">(Markatu ikusten dituzun guztiak)</span>
+      </p>
+
+      <label
+        ><input
+          name="Surfeko tablak"
+          value="hobetu beharrekoa"
+          type="checkbox"
+          class="input-checkbox"
+        />Surfeko taulak</label
+      >
+      <label>
+        <input
+          name="Lekua"
+          value="hobetu beharrekoa"
+          type="checkbox"
+          class="input-checkbox"
+        />Lekua</label
+      >
+      <label
+        ><input
+          name="Erabilitako Materiala"
+          value="Hobetu beharrekoa"
+          type="checkbox"
+          class="input-checkbox"
+        />Erabilitako Materiala</label
+      >
+      
+    </div>
+
+    <div class="form-group">
+      <p>Iradokizun edo kexarik ba al duzu??</p>
+      <textarea
+        id="Idatzi"
+        class="input-textarea"
+        name="Iradokizunak edo kexak"
+        placeholder="Idatzi..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="Kexak eta iradokizunak" id="Bidali" class="Bidali-button">
+        Bidali
+      </button>
+    </div>
+  </form>
+</div>
+</body>
